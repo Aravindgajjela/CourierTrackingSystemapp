@@ -1,34 +1,35 @@
-// Header.js
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom if using routing
+import { Link } from "react-router-dom";
+import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <div className="logo">
-        <h1>Courier Tracking</h1>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/orders">Orders</Link>
-          </li>
-          <li>
-            <Link to="/tracking">Tracking</Link>
-          </li>
-          {/* Add more navigation links as needed */}
-        </ul>
-      </nav>
-      <div className="user-profile">
-        {/* Add user profile information or login/logout functionality */}
-        <span>Welcome, Username</span>
-        {/* Add logout button or user profile icon */}
-      </div>
-    </header>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          My App
+        </Typography>
+        <Button color="inherit" component={Link} to="/home">
+          Home
+        </Button>
+        <Button color="inherit" component={Link} to="/track-courier">
+          Track Courier
+        </Button>
+        <Button color="inherit" component={Link} to="/services">
+          Services
+        </Button>
+        <Button color="inherit" component={Link} to="/track-no">
+          Track Number
+        </Button>
+        <Button color="inherit" component={Link} to="/faqs">
+          FAQs
+        </Button>
+        <Button color="inherit" component={Link} to="/contact">
+          Contact Us
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
-}
+};
 
 export default Header;
