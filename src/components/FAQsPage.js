@@ -19,7 +19,6 @@ const useStyles = makeStyles({
 function FAQsPage() {
   const classes = useStyles();
 
-  // Dummy FAQs data
   const faqsData = [
     {
       question: "What is Amazon Prime?",
@@ -31,7 +30,6 @@ function FAQsPage() {
       answer:
         "To track your Amazon package, you can visit the 'Your Orders' section on the Amazon website or app. From there, you can find the tracking information for your order.",
     },
-    // Add more FAQs data as needed
   ];
 
   return (

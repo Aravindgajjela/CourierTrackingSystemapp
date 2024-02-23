@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
 } from "react-router-dom";
-
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
+import HomeRoute from "./components/HomeRoute";
 import TrackingInformation from "./components/TrackingInformation";
 import AdminPanel from "./components/AdminPanel";
 import ServicesPage from "./components/ServicesPage";
@@ -20,8 +21,6 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = (username, password) => {
-    // Your login authentication logic here
-    // For demonstration, let's assume if username and password are not empty, consider the user as logged in
     if (username !== "" && password !== "") {
       setIsLoggedIn(true);
     }
@@ -32,19 +31,19 @@ function App() {
       <div>
         <Header />
         <Routes>
-          {/* Public routes accessible to all users */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/tracking" element={<TrackingInformation />} />
+          <Route path="/Home" element={<HomeRoute />} />
+          <Route path="/Track-courier" element={<TrackingInformation />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/track-number" element={<TrackNumberForm />} />
+          <Route path="/track-no" element={<TrackNumberForm />} />
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          {/* Private routes accessible only to authenticated users */}
+
           <Route
             path="/admin"
             element={isLoggedIn ? <AdminPanel /> : <Navigate to="/login" />}
           />
-          {/* Route to handle login */}
+
           <Route
             path="/login"
             element={<LoginPage handleLogin={handleLogin} />}

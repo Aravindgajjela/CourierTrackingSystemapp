@@ -1,24 +1,23 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook
+import { useNavigate } from "react-router-dom";
 
-import Header from "./Header"; // Import Header component
-
+import Header from "./Header";
 function LoginPage({ handleLogin }) {
   const [username, setUsername] = useState("aravind");
   const [password, setPassword] = useState("123456");
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Here you can perform login authentication using username and password
+
     handleLogin(username, password);
-    // Navigate to home page upon successful login
-    navigate("/home"); // Use navigate to navigate to the desired route
+
+    navigate("/home");
   };
 
   return (
     <div>
-      <Header /> {/* Display header component */}
+      <Header />
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>

@@ -1,0 +1,18 @@
+.contactContainer {
+  padding: 20px;
+  background-image: url("https://res.cloudinary.com/djllxgzm0/image/upload/v1708580319/240_F_297687974_fdWYuehYMTDMMClizLCoYuaGY4d97YKc_xhxobe.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.contactInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}

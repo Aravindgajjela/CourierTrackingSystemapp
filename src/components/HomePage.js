@@ -1,14 +1,15 @@
 import React from "react";
-import Header from "./Header";
 
-function HomePage() {
-  return (
-    <div>
-      <Header />
+function App() {
+  const bgStyle = {
+    backgroundImage: `url('https://res.cloudinary.com/djllxgzm0/image/upload/v1708579917/pexels-rdne-stock-project-7362888_be2n42.jpg')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: "98vw",
+    height: "150vh",
+  };
 
-      <h2>Welcome to the Home Page</h2>
-    </div>
-  );
+  return <div style={bgStyle}></div>;
 }
 
-export default HomePage;
+export default App;
