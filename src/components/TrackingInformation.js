@@ -54,7 +54,6 @@ const Button = styled.button`
 `;
 
 function TrackingInformation() {
-  // Dummy tracking data for demonstration
   const [trackNumber, setTrackNumber] = useState("");
   const trackingData = [
     { id: 1, packageId: "PKG123", status: "In Transit", location: "New York" },
@@ -65,7 +64,6 @@ function TrackingInformation() {
       location: "Los Angeles",
     },
     { id: 3, packageId: "PKG789", status: "Delivered", location: "Chicago" },
-    // Add more dummy tracking data as needed
   ];
 
   const handleTrackNumberChange = (event) => {
@@ -73,7 +71,6 @@ function TrackingInformation() {
   };
 
   const handleTrack = () => {
-    // Handle tracking logic here
     console.log("Track number:", trackNumber);
   };
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 function AdminPanel() {
-  // Dummy tracking data for demonstration
   const [trackingData, setTrackingData] = useState([
     { id: 1, packageId: "PKG123", status: "In Transit", location: "New York" },
     {
@@ -11,7 +10,6 @@ function AdminPanel() {
       location: "Los Angeles",
     },
     { id: 3, packageId: "PKG789", status: "Delivered", location: "Chicago" },
-    // Add more dummy tracking data as needed
   ]);
 
   const handleUpdateStatus = (id, newStatus) => {

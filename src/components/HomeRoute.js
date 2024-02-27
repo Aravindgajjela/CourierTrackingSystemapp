@@ -54,7 +54,8 @@ function HomeRoute() {
   return (
     <Container>
       <Sidebar>
-        <h2>Sidebar</h2>
+        <h2>Welcome, Hi </h2>
+        <p>Explore our features</p>
         <StyledButtonLink to="/dashboard">Dashboard</StyledButtonLink>
         <StyledButtonLink to="/shipments">Shipments</StyledButtonLink>
         <StyledButtonLink to="/clients">Clients</StyledButtonLink>
@@ -62,10 +63,7 @@ function HomeRoute() {
         <StyledButtonLink to="/settings">Settings</StyledButtonLink>
         <StyledBackButton to="/">Back</StyledBackButton>
       </Sidebar>
-      <Content>
-        <h2>Welcome, Hi </h2>
-        <p>Explore our features</p>
-      </Content>
+      <Content></Content>
     </Container>
   );
 }

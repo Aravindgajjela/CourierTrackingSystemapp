@@ -1,48 +1,68 @@
-_Courier Tracking System with Admin Panel_
+# Courier Tracking System
 
-This project is a comprehensive Courier Tracking System with an Admin Panel that allows users to efficiently track packages and manage delivery operations.
+## Description
 
-_Technologies Used_
+The Courier Tracking System is a web application that allows users to track their courier packages. It provides various features such as tracking information, services offered, FAQs, and a contact page. Additionally, there is an admin panel for managing courier information.
 
-Frontend:
-
-1. HTML, CSS, JavaScript
-2. React.js for building the user interface
-3. Redux for state management
-
-Backend:
-
-1. Node.js and Express.js for the server
-2. MongoDB as the database using Mongoose for object modeling
-
-_Installation_
+## Installation
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository to your local machine:
 
 git clone https://github.com/your-username/courier-tracking-system.git
 
-2. Install dependencies for both the frontend and backend:
+2. Navigate to the project directory:
 
-cd courier-tracking-system/frontend
+cd courier-tracking-system
+
+3. Install dependencies using npm or yarn:
+
 npm install
 
-cd ../backend
-npm install
+4. Start the development server:
 
-3. Configure environment variables. You'll need to set up environment variables for database connection, API keys, etc.
-
-4. Start the development servers:
-
-# Start frontend
-
-cd ../frontend
 npm start
 
-# Start backend
+5. Open your browser and visit http://localhost:3000 to view the project.
 
-cd ../backend
-npm start
+## Usage
 
-5. Open your browser and navigate to http://localhost:3000 to access the application.
+- Navigate to the homepage to get started.
+- Use the "Track Courier" page to enter tracking information and check the status of your courier packages.
+- Explore the "Services" page to learn about the services offered by the courier company.
+- Have questions? Visit the "FAQs" page for answers to commonly asked questions.
+- Need assistance? Contact us through the "Contact" page.
+
+## Sample Tracking IDs
+
+To test the tracking functionality, you can use the following sample tracking IDs:
+
+- Tracking ID 1: XYZ123
+- Tracking ID 2: ABC456
+- Tracking ID 3: DEF789
+
+## Admin Panel Credentials
+
+To access the admin panel, use the following credentials:
+
+- Username: admin@example.com
+- Password: admin123
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/your-feature-name`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature-name`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contact
+
+For any questions or feedback, please feel free to contact us at aravindgajjela07@gmail.com
