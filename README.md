@@ -37,6 +37,12 @@ npm start
 ## Sample Tracking IDs
 
 To test the tracking functionality, you can use the following sample tracking IDs:
+-The POST, PUT, and DELETE routes for both regular and admin APIs are implemented.
+-For the POST routes, new tracking information is inserted into the database.
+-For the PUT routes, existing tracking information is updated in the database.
+-For the DELETE routes, existing tracking information is deleted from the database.
+-Error handling is implemented for database operations.
+
 
 - Tracking ID 1: XYZ123
 - Tracking ID 2: ABC456
