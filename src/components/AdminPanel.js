@@ -27,6 +27,8 @@ function AdminPanel() {
   return (
     <div>
       <h2>Admin Panel</h2>
+      <p>Sample Tracking IDs: PKG123, PKG456, PKG789</p>
+      <p>Admin Panel Credentials: Username - admin, Password - admin123</p>
       <table>
         <thead>
           <tr>

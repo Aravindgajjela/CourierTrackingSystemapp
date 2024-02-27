@@ -80,11 +80,11 @@ function TrackingInformation() {
       <div>
         <Input
           type="text"
-          placeholder="Enter Track Number"
+          placeholder="Enter Track Id"
           value={trackNumber}
           onChange={handleTrackNumberChange}
         />
-        <Button onClick={handleTrack}>Track</Button>
+        <Button onClick={handleTrack}>Track Id</Button>
       </div>
       <Table>
         <thead>
